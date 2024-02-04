@@ -1,0 +1,139 @@
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+.swiper-slide {
+    width: 100%;
+    height: 80vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-visites {
+    background-image: url('Images/Visites.png');
+    background-size: cover;}
+
+.slide-ateliers {
+    background-image: url('Images/ateliers_immersion_IIM_mars_2019.jpg');
+    background-size: cover;}
+
+.slide-discours {
+    background-image: url('Images/Discours.jpg');
+    background-size: cover;}.subtitle {
+                                color: #000000;
+                                font-size: 24px;
+                                text-transform: lowercase;
+                                letter-spacing: 3px;
+    }
+
+body .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;}
+
+body .swiper-pagination-bullet-active {
+    background: white;}
+
+body .swiper-button-next,
+body .swiper-button-prev {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.centered-text {
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Nouvelle Vague', "Rockwell Condensed";
+
+}
+
+
+.swiper-slide .subtitle, .swiper-slide .title {
+    color: white;
+    font-family: 'Nouvelle Vague', sans-serif;
+}
+
+.subtitle {
+    font-size: 24px;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 82px;
+    text-transform: lowercase;
+}
+
+.navigationbar {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 25px;
+
+}
+
+.navigationbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.navigationbar ul li {
+    list-style-type: none;
+    margin: 12px;
+}
+
+.navigationbar h1 {
+    margin: 4px;
+    padding: 0;
+    color: white;
+}
+
+#darkModeButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff8400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#darkModeButton.dark-mode {
+    background-color: #555;
+    color: #fff;
+}
+
+#darkModeButton.light-mode {
+    background-color: #ff8400;
+    color: #fff;
+}
+
+#darkModeButton:hover {
+    background-color: #555;
+}
+
+#sunIcon,
+#moonIcon {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+#moonIcon {
+    display: none;
+}

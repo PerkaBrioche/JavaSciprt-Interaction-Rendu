@@ -1,0 +1,90 @@
+.message-error {
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid red;
+    border-radius: 8px;
+    font-size: 16px;
+    color: red;
+}
+
+.message-error.visible {
+    display: block;
+}
+.invalid {
+    border: 2px solid red !important;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ff6f00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+label[class*="classe"] {
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+button {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+.success, .error {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.success {
+    background-color: green;
+    color: white;
+    border: 1px solid rgb(81, 150, 2);
+}
+
+.error {
+    color: red;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}

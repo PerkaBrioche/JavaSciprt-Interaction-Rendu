@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <button id="darkModeButton">
+        <i id="sunIcon" class="fas fa-sun"></i>
+        <i id="moonIcon" class="fas fa-moon"></i>
+    </button>
+    <script src="FormsCheck.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="StyleForms.css">
+    <link rel="stylesheet" href="Style.css">
+
+    <div class="navigationbar">
+        <nav>
+            <ul>
+                <li><a href="Acceuil.html">JPO</a></li>
+                <li><a href="Tabs.html">Secteurs</a></li>
+                <li><a href="Forms.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </div>
+</head>
+<body>
+
+<div class="message-error">
+    <ul></ul>
+</div>
+
+<div class="container">
+    <h1>Formulaire d'inscription</h1>
+    <form id="inscriptionForm">
+        <label for="nom">Nom (requis):</label>
+        <input type="text" id="nom" name="nom">
+
+        <label for="prenom">Prénom (requis):</label>
+        <input type="text" id="prenom" name="prenom">
+
+        <label for="email">Email (requis):</label>
+        <input type="email" id="email" name="email">
+
+        <label>Classe actuelle (requis):</label>
+        <div>
+            <label for="classe1"><input type="radio" id="classe1" name="classe" value="1ere"> 1ère</label>
+            <label for="classeT"><input type="radio" id="classeT" name="classe" value="Terminal"> Terminal</label>
+            <label for="classeS"><input type="radio" id="classeS" name="classe" value="Secondes"> Secondes</label>
+            <label for="classeA"><input type="radio" id="classeA" name="classe" value="Autres"> Autres</label>
+        </div>
+
+        <label for="axe">Axe préféré (requis):</label>
+        <select id="axe" name="axe">
+            <option value="" disabled selected>Choisissez un axe</option>
+            <option value="Coding">Coding Innovation</option>
+            <option value="JV">Jeu-Vidéo</option>
+            <option value="Design">Création Design</option>
+            <option value="3D">3D</option>
+        </select>
+
+        <label for="evenement">Événement :</label>
+        <textarea id="evenement" name="evenement" rows="4" placeholder="La journée Porte Ouverte vous a plu ?"></textarea>
+        <label for="avis">Votre avis compte ! 1-5 étoiles (requis):</label>
+        <input type="number" id="avis" name="avis" min="1" max="5">
+
+        <button type="button" id="submitForms">Cliquez-moi</button>
+    </form>
+    <script src="DarkTheme.js"></script>
+</div>
+</body>
+</html>
